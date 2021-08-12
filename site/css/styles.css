@@ -1,197 +1,180 @@
-*{
-    box-sizing: border-box;
-   font-family: serif;
-   font-size: 105%;
-    
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
 }
-.title0
-{
+
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0; 
+}
+
+
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { 
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus ,a{
+  text-decoration: none;
+}
+.navbar-brand p { 
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span {
+  vertical-align: middle;
+}
+li{
+  margin-right: 5px;
+  
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
   text-align: center;
-  font-size:250% ;
-  color: red ;
-  margin-bottom: 25px;
-}
-.title1,.title2,.title3
-{
-    float: right;
-    clear: left;
-    border: 1px dotted black;
 }
 
-.title1
-{
- background-color: #7a764b;
-}
-.title2
-{
-    background-color: #f0ffff;
-
-}
-.title3
-{
-    background-color: #636363;
+#nav-list a:hover {
+  background: #E7E7E7;
 }
 
-.m1{
-background-color: #29ab87;
-
-}
-.m2
-{
-    background-color:#5f9ea0 ;
-}
-.m3
-{
-    background-color: #8fbc8f;
-
+#nav-list a span {
+  font-size: 1.8em;
 }
 
-.row{
-    width: 100%;
+
+#phone a {
+  text-align: right;
+  padding-bottom: 0;
 }
+#phone div {
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .navbar-toggler-icon{
+  border: 2px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
 /********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px solid black;
-    margin-bottom: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 2px;
-    height:250px;
+@media (min-width: 1200px) {
+  .jumbotron{
+    background: url('C:/Users/ASUS/Downloads/Video/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 1px solid #3f0C1f;
   }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
+  #logo-img {
+  background: url('C:/Users/ASUS/Downloads/Documents/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('C:/Users/ASUS/Downloads/Music/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
   }
 }
 
-
+/********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 2px solid black;
-    margin-bottom: 15px;
-    margin-right:auto;
-    margin-left: auto;
-    padding: 2px;
-    height:250px ;
+  
+  #logo-img {
+    background: url('C:/Users/ASUS/Downloads/Music/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
   }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
+
 }
-@media(max-width: 767px)
-{
-    .col-ms-1,.col-ms-2,.col-ms-3,.col-ms-4,.col-ms-5,.col-ms-6,.col-ms-7,.col-ms-8,.col-ms-9,.col-ms-10,.col-ms-11,.col-ms-12
-    {
-        float: left;
-        border: 2px solid black;
-     margin-bottom: 15px;
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
     margin-right: 5px;
-    margin-left: 5px; 
-    padding: 2px;  
-    height:250px ;     
-    }
-    .col-ms-1 {
-    width: 8.33%;
   }
-  .col-ms-2 {
-    width: 16.66%;
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin-top: 10px;
+    margin-right:10px ;
+    margin-bottom:20px ;
+    margin-left: 10px;
+    padding: 10px;
+    border: 5px solid #557c3e;
+    background-color: #f6b319;
+    color: #951c49;
   }
-  .col-ms-3 {
-    width: 25%;
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
   }
-  .col-ms-4 {
-    width: 33.33%;
-  }
-  .col-ms-5 {
-    width: 41.66%;
-  }
-  .col-ms-6 {
-    width: 50%;
-  }
-  .col-ms-7 {
-    width: 58.33%;
-  }
-  .col-ms-8 {
-    width: 66.66%;
-  }
-  .col-ms-9 {
-    width: 74.99%;
-  }
-  .col-ms-10 {
-    width: 83.33%;
-  }
-  .col-ms-11 {
-    width: 91.66%;
-  }
-  .col-ms-12 {
-    width: 100%;
-  }
+  /* End Header */
+
+} 
+#call-btn
+{
+  align-items: center;
+  margin: 20px 20px 0px 20px  ;
 }
+.c1{
+  border: 2px solid #fff;
+  color: black;
+  background: #f6b319;
+} 
